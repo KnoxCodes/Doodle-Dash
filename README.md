@@ -1,5 +1,7 @@
 # 🎨 Doodle Dash
 
+![Doodle Dash Screenshot](Website.png)
+
 Doodle Dash is an **AI-powered drawing game** inspired by Google's QuickDraw.
 
 Users draw an object on a canvas and a **Convolutional Neural Network (CNN)** tries to guess what it is in real time.
