@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+venv/
+.env
+
+# Dataset files
+data/
+*.npy
+
+# Training artifacts
+X.npy
+y.npy
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Build folders
+dist/
+build/

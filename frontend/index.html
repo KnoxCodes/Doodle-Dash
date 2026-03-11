@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doodle Dash</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <h1 class="title">🎨 Doodle Dash</h1>
+      <p class="subtitle">Draw fast. Let AI guess.</p>
+    </header>
+
+    <main class="game-shell">
+      <section class="left-panel card">
+        <div class="top-bar">
+          <div class="prompt-box">
+            <span class="label">Draw:</span>
+            <span id="promptText" class="prompt-value">CAT</span>
+          </div>
+
+          <div class="score-box">
+            <span class="label">Score:</span>
+            <span id="scoreValue">0</span>
+          </div>
+        </div>
+
+        <div class="timer-wrap">
+          <div class="timer-head">
+            <span>Time Left</span>
+            <span id="timerText">10s</span>
+          </div>
+          <div class="timer-bar">
+            <div id="timerFill" class="timer-fill"></div>
+          </div>
+        </div>
+
+        <div class="canvas-frame">
+          <canvas id="canvas" width="280" height="280"></canvas>
+        </div>
+
+        <div class="controls">
+          <button id="startBtn" class="btn btn-primary">▶ Start Game</button>
+          <button id="newRoundBtn" class="btn btn-secondary">↻ New Round</button>
+          <button id="clearBtn" class="btn btn-secondary">⌫ Clear</button>
+        </div>
+
+        <div id="statusBox" class="status-box">
+          Press <strong>Start Game</strong> to begin.
+        </div>
+      </section>
+
+      <aside class="right-panel card">
+        <h2>🤖 AI Guesses</h2>
+        <div id="predictionState" class="prediction-state">Waiting for drawing...</div>
+
+        <div id="predictions" class="predictions">
+          <div class="prediction-item">
+            <span>#1</span>
+            <span>—</span>
+          </div>
+          <div class="prediction-item">
+            <span>#2</span>
+            <span>—</span>
+          </div>
+          <div class="prediction-item">
+            <span>#3</span>
+            <span>—</span>
+          </div>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
