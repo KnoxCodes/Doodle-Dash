@@ -51,13 +51,17 @@ Images are converted to:
 
 ## 🏗 CNN Architecture
 
-Conv2D → ReLU → MaxPool
-Conv2D → ReLU → MaxPool
-Conv2D → ReLU → MaxPool
-Flatten
-Dense → ReLU
-Dropout
-Output Layer (Softmax)
+```mermaid
+graph TD
+A[Input Image 28x28] --> B[Conv2D + ReLU + MaxPool]
+B --> C[Conv2D + ReLU + MaxPool]
+C --> D[Conv2D + ReLU + MaxPool]
+D --> E[Flatten]
+E --> F[Dense Layer + ReLU]
+F --> G[Dropout]
+G --> H[Output Layer Softmax]
+H --> I[Predicted Class]
+```
 
 
 ---
