@@ -69,8 +69,7 @@ H --> I[Predicted Class]
 
 ## 📂 Project Structure
 
-Doodle Dash
-│
+Doodle-Dash
 ├── backend
 │   ├── app.py              # FastAPI server
 │   ├── predict.py          # Model inference logic
@@ -81,17 +80,18 @@ Doodle Dash
 │   ├── style.css           # UI styling
 │   └── script.js           # Game logic + API calls
 │
-├── data/                   # Dataset (ignored in Git)
+├── data                    # Dataset folder (ignored in Git)
 │
 ├── doodle_dash_cnn.pth     # Trained CNN model
 │
-├── prepare_dataset.py      # Dataset preparation
-├── train_cnn.py            # Model training script
+├── prepare_dataset.py      # Dataset preprocessing
+├── train_cnn.py            # CNN training script
 │
 ├── X.npy                   # Training data (ignored)
 ├── y.npy                   # Training labels (ignored)
 │
-└── requirements.txt        # Python dependencies
+├── requirements.txt        # Python dependencies
+└── README.md               # Project documentation
 
 
 ---
