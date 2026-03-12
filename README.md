@@ -72,26 +72,26 @@ H --> I[Predicted Class]
 Doodle Dash
 │
 ├── backend
-│ ├── app.py # FastAPI server
-│ ├── predict.py # Model inference logic
-│ └── model.py # CNN architecture
+│   ├── app.py              # FastAPI server
+│   ├── predict.py          # Model inference logic
+│   └── model.py            # CNN architecture
 │
 ├── frontend
-│ ├── index.html # Web interface
-│ ├── style.css # UI styling
-│ └── script.js # Game logic + API calls
+│   ├── index.html          # Web interface
+│   ├── style.css           # UI styling
+│   └── script.js           # Game logic + API calls
 │
-├── data/ # Dataset (ignored in Git)
+├── data/                   # Dataset (ignored in Git)
 │
-├── doodle_dash_cnn.pth # Trained CNN model
+├── doodle_dash_cnn.pth     # Trained CNN model
 │
-├── prepare_dataset.py # Dataset preparation
-├── train_cnn.py # Model training script
+├── prepare_dataset.py      # Dataset preparation
+├── train_cnn.py            # Model training script
 │
-├── X.npy # Training data (ignored)
-├── y.npy # Training labels (ignored)
+├── X.npy                   # Training data (ignored)
+├── y.npy                   # Training labels (ignored)
 │
-└── requirements.txt # Python dependencies
+└── requirements.txt        # Python dependencies
 
 
 ---
