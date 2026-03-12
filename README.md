@@ -67,42 +67,14 @@ H --> I[Predicted Class]
 
 ---
 
-## 📂 Project Structure
-
-Doodle-Dash
-├── backend
-│   ├── app.py              # FastAPI server
-│   ├── predict.py          # Model inference logic
-│   └── model.py            # CNN architecture
-│
-├── frontend
-│   ├── index.html          # Web interface
-│   ├── style.css           # UI styling
-│   └── script.js           # Game logic + API calls
-│
-├── data                    # Dataset folder (ignored in Git)
-│
-├── doodle_dash_cnn.pth     # Trained CNN model
-│
-├── prepare_dataset.py      # Dataset preprocessing
-├── train_cnn.py            # CNN training script
-│
-├── X.npy                   # Training data (ignored)
-├── y.npy                   # Training labels (ignored)
-│
-├── requirements.txt        # Python dependencies
-└── README.md               # Project documentation
-
-
----
 
 ## ▶️ Running the Backend
 
 Navigate to the backend folder:
 cd backend
 
-Start the FastAPI server:
-uvicorn app:app --reload
+Start the FastAPI server: 
+ uvicorn app:app --reload
 
 Backend will run at:
 http://127.0.0.1:8000
@@ -113,10 +85,12 @@ http://127.0.0.1:8000
 ## 🌐 Running the Frontend
 
 Open the frontend folder and start a local server:
+
 cd frontend
+
 python -m http.server 5500
 
-Then open:
+Then open: 
 http://127.0.0.1:5500
 
 ---
